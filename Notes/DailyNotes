@@ -1,0 +1,66 @@
+Automation Testing :
+-----------------
+Testing any application feature with the help of Automation Tool.
+
+Automation Tool :
+-------------------
+1.selenium 
+2.sahi
+3.sahi pro
+4.protector
+5.Appium - mobile Automation 
+
+Manual DisAdv
+--------------------
+1.require more resources 
+2. its time consuming 
+3.comaptibility testing --diifcutlt and time consuming 
+4.Regression Testing --time consuming 
+5.test cycle Duration incearse
+6.require more human efforts / human error 
+
+
+Automation Adv
+-------------------------
+1. less resources required 
+2.Regression Testing and crossBrowser Testing - its easy and less time required 
+3.Test cycle duration decrease
+4.Reusability of script 
+
+test Script --- test case convert program 
+
+-----------------------------------------------------------------------------------
+Selenium 
+
+Why selenium ? / Adv Selenium 
+
+----------
+Open source tool --- freely avilable -- licence No 
+supported by multiple lang --- java ,python ,javascript,ruby,pearl ....
+supported for Cross Browser Test
+support multiple O.S.
+
+DisAdv Selenium
+--------------------------
+1. we can automate only web application . 
+  .we can not automate standalone application ex. calculator 
+2. we can not handle captcha and barcode .
+3. File upload and download task -- we can not handle 
+   we use third party tool - AutoIT / Robot class 
+
+===============================================================
+
+Selenium Architecture 
+
+Search context (I)-extends -WebDriver (I)--implements-- Remote WebDriver class (c) --extends- multiple Browser Driver classes (c)
+
+==========================================================================
+Project Maven 
+
+maven -- build managment tool
+
+src/main/java
+src/main/resources
+src/test/java
+src/test/resources
+pom.xml  -----depedancy add -https://mvnrepository.com/

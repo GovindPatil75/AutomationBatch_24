@@ -65,9 +65,45 @@ src/test/java
 src/test/resources
 pom.xml  -----depedancy add -https://mvnrepository.com/
 =================================================================
+Browser Open 
 
+ex .test case 
 
+open browser - chrome 
+enter valid value - email
+enter valid value - password
+click on login button 
 
+WebElement -- anything on webpage 
+txt field ,button ,image,link ,checkbox,radio button
+
+Locators : we identify webelement using Locators
+         : 8 Type of locator
+         
+         1.classname
+         2.name
+         3.id
+         4.tagname
+         5.xpath
+         6.linktext
+         7.partial link text
+         8.CSS selector
+         
+         //name locator 
+         
+         WebElement EmailId=driver.findElement(By.name("email"));
+         
+         EmailId.sendKeys("Test@gmail.com");
+         
+         WebElement password=driver.findElement(By.name("pass"));
+         
+         password.sendKeys("12345678");
+         
+         WebElement loginBtn=driver.findElement(By.name("login"));
+         
+         loginBtn.click();
+---------------
+Task Url : https://demo.guru99.com/test/newtours/register_sucess.php
 
 
 

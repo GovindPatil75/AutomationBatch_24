@@ -105,6 +105,10 @@ Locators : we identify webelement using Locators
 ---------------
 Task Url : https://demo.guru99.com/test/newtours/register_sucess.php
 
+ID locator :
+
+WebElement element=driver.findElement(By.Id(""));
+
 
 
 

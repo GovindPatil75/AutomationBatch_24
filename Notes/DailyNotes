@@ -108,7 +108,35 @@ Task Url : https://demo.guru99.com/test/newtours/register_sucess.php
 ID locator :
 
 WebElement element=driver.findElement(By.Id(""));
+---------------------------------------------------------
+Xpath locator
 
+Dom Structrue :
+
+tagname : anything after <
+        ex .input,div,li,a,button
+        
+attributename="attribute value"
+
+EX .value="1"
+    id="u_0_5_by"
+    
+text :
+    
+   >text<
+   EX .>Forgotten password?<
+
+Xpath locator : Identify the WebElement 
+
+1. Absolute Xpath (/)
+----------------------
+parent node -- immidiate chide node -- element node 
+
+-- start with "/"
+
+WebElement element =driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input"));
+
+2. Relative Xpath (//)
 
 
 

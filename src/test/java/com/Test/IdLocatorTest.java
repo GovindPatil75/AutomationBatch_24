@@ -24,8 +24,10 @@ public class IdLocatorTest {
 		WebElement Password=driver.findElement(By.id("pass"));
 		Password.sendKeys("12345678");
 		
-		WebElement loginBtn=driver.findElement(By.id("u_0_5_zK"));
-		loginBtn.click();
+		//WebElement loginBtn=driver.findElement(By.id("u_0_5_an"));
+		//loginBtn.click();
+		
+		driver.findElement(By.name("login")).click();
 	}
 
 }

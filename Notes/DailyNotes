@@ -136,7 +136,64 @@ parent node -- immidiate chide node -- element node
 
 WebElement element =driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input"));
 
+=========================================
 2. Relative Xpath (//)
+
+tagname 
+attributename="attribute value"
+>text<
+
+parent to any child 
+child node --> eleent identify 
+
+1. Xpath by attribute :
+-------------------------------
+//tagname[@attributename='attribute value']
+
+EX.//input[@name='firstName']
+
+driver.findElement(By.xpath("//input[@name='firstName']"));
+
+2.Xpath by text() 
+--------------------------------
+//tagname[text()='text value']
+
+EX .//a[text()='Forgotten password?']
+
+driver.findElement(By.xpath("//a[text()='Forgotten password?']"));
+
+3. Xpath by Contains()
+--------------------------------
+//tagname[contains(@attributename,'attribute static value')]
+//tagname[contains(text(),'partial text value')]
+
+EX.//button[contains(@id,'u_0_5')]
+
+driver.findElement(By.xpath("//button[contains(@id,'u_0_5')]"))
+
+EX .//a[contains(text(),'Forgotten ')]
+
+driver.findElement(By.xpath("//a[contains(text(),'Forgotten ')]"))
+
+4. Xpath by index 
+---------------------------------
+
+(Xpath expression)[index]
+
+EX .(//input[@type='text'])[3]
+
+WebElement element=driver.findElement(By.xpath("(//input[@type='text'])[3]"))
+
+================================================================
+
+List<WebElement> Element=driver.findElements(By.xpath("//input[@type='text']"));
+
+
+
+
+
+
+
 
 
 

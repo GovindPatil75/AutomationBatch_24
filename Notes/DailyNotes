@@ -188,6 +188,33 @@ WebElement element=driver.findElement(By.xpath("(//input[@type='text'])[3]"))
 
 List<WebElement> Element=driver.findElements(By.xpath("//input[@type='text']"));
 
+formula
+------------------
+//tagname[@attribute name='value']
+
+//tagname[text()='text value']
+
+//tagname[contains(@attribute name ,'Static value')]
+//tagname[contains(text(),'partial value ')]
+
+(xpath expression)[index]
+-----------------------------------------------------------------------
+How to handle DropDOwn ?
+
+Element -- tagname -- select -- select class -- Drop Down handle 
+
+// identify element
+WebElement element=driver.findElement(By.xpath("xpath expression"));
+// Object create select class
+Select dropDown=new Select(element);
+
+// object
+dropDown.selectByIndex(12); // 1,70,23,
+
+dropDown.selectByValue("value");
+
+dropDown.selectByVisibletext("text");
+
 
 
 

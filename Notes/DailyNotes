@@ -215,6 +215,17 @@ dropDown.selectByValue("value");
 
 dropDown.selectByVisibletext("text");
 
+============================================================
+How to capture Screenshot ?
+
+Full webpage :
+
+TakesScrrenshot ts=driver;
+File Src=ts.getscreenshotAs(OutPutType.FILE);
+File destn=new File("location\\test.png");
+FileUtils.copyFile(Src,destn);
+
+Element /Sections
 
 
 

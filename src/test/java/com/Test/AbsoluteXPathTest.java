@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AbsoluteXPathTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		// Browser Open
 		WebDriverManager.chromedriver().setup();
@@ -27,6 +27,11 @@ public class AbsoluteXPathTest {
 		
 		WebElement loginBtn=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button"));
 		loginBtn.click();
+		
+		Library.getScreenshotWebpage(driver);
+		
+		Library.custom_SendKeys(Email, "Test@gmail.com");
+		
 		
 		
 	}

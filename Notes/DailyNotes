@@ -217,7 +217,7 @@ dropDown.selectByVisibletext("text");
 
 ============================================================
 How to capture Screenshot ?
-
+======================================
 Full webpage :
 
 TakesScrrenshot ts=driver;
@@ -225,7 +225,30 @@ File Src=ts.getscreenshotAs(OutPutType.FILE);
 File destn=new File("location\\test.png");
 FileUtils.copyFile(Src,destn);
 
-Element /Sections
+Element /Sections :
+=========================================
+Scrolling on Webpage 
+Max pixel size of webpage  =document.body.scrollHeight
+pixel :
+
+JavaScriptExecutor js=driver; 
+//
+top -bottom
+js.executeScript("window.scrollBy(0,400)","");
+
+bottom -top
+js.executeScript("window.scrollBy(0,-400)","");
+
+
+element 
+---------
+WebElement element=driver.findElement(By.xpath(""));
+JavaScriptExecutor js=driver; 
+js.executeScript("arguments[0].scrollIntoView();",element);
+
+
+
+
 
 
 

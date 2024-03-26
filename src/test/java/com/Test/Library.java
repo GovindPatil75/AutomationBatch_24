@@ -9,6 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class Library {
 	
@@ -33,6 +34,10 @@ public class Library {
 		
 	}
 	
+	public static Actions getActions(WebDriver driver) {
+		Actions act=new Actions(driver);
+		return act;
+	}
 	
 
 }

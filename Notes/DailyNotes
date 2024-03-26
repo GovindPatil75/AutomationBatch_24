@@ -246,6 +246,28 @@ WebElement element=driver.findElement(By.xpath(""));
 JavaScriptExecutor js=driver; 
 js.executeScript("arguments[0].scrollIntoView();",element);
 
+=================================================================
+Actions class 
+
+mouse movement and keyboard action action --Actions class
+
+mouse Hover + click 
+
+click(element) +click (option element)
+
+right click --context click (element)
+double click -- 
+
+drag and drop --
+
+KeyDown()
+KeyUp()
+
+Actions act=new Actions(driver);
+
+
+
+
 
 
 

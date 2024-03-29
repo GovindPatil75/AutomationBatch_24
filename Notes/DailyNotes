@@ -266,8 +266,25 @@ KeyUp()
 Actions act=new Actions(driver);
 
 ===============================================================
+Pop Up handle
+
+1. Alert 
+2 .CHild browser window pop Up
+
+Alert handle :
+--------------------
+confirmation /warning /user input 
+
+simple alert --notification -- ok 
+confirmation alert -- confirmation -- ok/cancel
+prompt Alert -- alert user input -- 0k/cancel
 
 
+Alert alt=driver.switchto().alert();
+
+alt.gettext(); // string - alert text
+alt.accept();  // click OK button 
+alt.dismiss(); // click Cancel Button 
 
 
 

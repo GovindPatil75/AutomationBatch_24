@@ -42,6 +42,9 @@ public class AlertHandleTest {
 		System.out.println(text2);
 		
 		alt.accept();
+		
+		//sendkeys
+		//alt.sendKeys("test");
 	}
 
 }

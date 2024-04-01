@@ -32,13 +32,17 @@ public class ChildBrowserWindowHandleTest {
         System.out.println(list.get(0));
         System.out.println(list.get(1));
         
+        // switch child browser window 
         driver.switchTo().window(list.get(1));
         
         driver.findElement(By.xpath("//input[@name='emailid']")).sendKeys("Test");
         
         //driver.close(); // Browser current window 
         
-        driver.quit(); // Current window + All open window close 
+       // driver.quit(); // Current window + All open window close 
+        
+        // Parent window switch 
+        driver.switchTo().window(ParentWindowID);
         
         
 	}

@@ -8,7 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class NameLocatorTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		// Browser Open
 		WebDriverManager.chromedriver().setup();
@@ -18,11 +18,14 @@ public class NameLocatorTest {
 		
 		// WebElement Identify -- locator -- name 
 		
+		String Username=Library.getExcelTestDataString("Sheet1", 0, 0);
+		String passworddata=Library.getExcelTestDataString("Sheet1", 0, 1);
+		
 		WebElement EmailId=driver.findElement(By.name("email"));
-		EmailId.sendKeys("Test@gmail.com");
+		EmailId.sendKeys(Username);
 		
 		WebElement password=driver.findElement(By.name("pass"));
-		password.sendKeys("12345678");
+		password.sendKeys(passworddata);
 		
 		WebElement loginBtn=driver.findElement(By.name("login"));
 		loginBtn.click();

@@ -1,7 +1,11 @@
 package com.Test;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -44,4 +48,28 @@ public class Library {
 	
     	return driver.switchTo().alert();
     }
+    
+    public static String getExcelTestDataString(String sheetname,int row,int cell) throws Exception {
+    	
+      String Excelpath=System.getProperty("user.dir")+"\\TestData\\Data.xlsx";
+	  FileInputStream fis=new FileInputStream(Excelpath);
+	  XSSFWorkbook wb=new XSSFWorkbook(fis);
+	  String data=wb.getSheet(sheetname).getRow(row).getCell(cell).getStringCellValue();
+	  return data;
+			
+    }
+    
+    public static double getExcelTestDataNumeric(String sheetname,int row,int cell) throws Exception {
+    	
+        String Excelpath=System.getProperty("user.dir")+"\\TestData\\Data.xlsx";
+  	  FileInputStream fis=new FileInputStream(Excelpath);
+  	  XSSFWorkbook wb=new XSSFWorkbook(fis);
+  	  double data=wb.getSheet(sheetname).getRow(row).getCell(cell).getNumericCellValue();
+  	  return data;
+  			
+      }
+    
+    
+    
+    
 }

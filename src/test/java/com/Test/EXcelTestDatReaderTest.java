@@ -13,7 +13,7 @@ public class EXcelTestDatReaderTest {
 	public static void main(String[] args) throws Exception {
 		
 		// Step 1 -- excel location -- string 
-		String Path="C:\\Users\\Dell\\eclipse-workspace\\AutomationBatch_24\\TestData\\Data.xlsx";
+		String Path=System.getProperty("user.dir")+"\\TestData\\Data.xlsx";
 		
 		// Object FileINputStream --- Path
 		FileInputStream fis=new FileInputStream(Path);

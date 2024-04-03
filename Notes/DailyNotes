@@ -316,9 +316,37 @@ Excel ---
 
 double .0 --- string --- element 
 
+==================================================
+How Iframe /frame handle 
 
+switch --- 
 
+frame : webpage vertically /horizontally spilt .
+        frame frameset tag HTML -- deprecated HTML5
+        
+Iframe (Inline frame): html webpage emmbeddded another html page
+       : content diffrent resources /Adv  
+       
+     driver.switchto().frame(0);  // index 
+     driver.switchto().frame(WebElement element);
+     driver.switchto().frame(String name or ID);
 
+Scenario 1 : one webpage --- have multipe frame 
+
+ driver.switchto().frame(element) // MainWebpage -- frame 1
+ driver.switchto().deafultcontent(); // frame1 ---> Mainpage 
+ 
+ driver.switchto().frame(element) // MainWebpage -- frame 2
+ driver.switchto().deafultcontent(); // frame2 ---> Mainpage
+
+Scenario 2 : Mainpage ---outter frame ---inner frame
+
+driver.switchto().frame(element) // MainWebpage -- Ouuterframe
+driver.switchto().frame(element) // Ouuterframe -- inneriframe
+// Webelement -inner iframe handle 
+
+driver.switchto().parentframe();  //inneriframe--outterframe
+driver.switchto().deafultcontent(); //outterframe--mainpage 
 
 
 

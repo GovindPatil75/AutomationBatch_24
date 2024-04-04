@@ -348,6 +348,37 @@ driver.switchto().frame(element) // Ouuterframe -- inneriframe
 driver.switchto().parentframe();  //inneriframe--outterframe
 driver.switchto().deafultcontent(); //outterframe--mainpage 
 
+===========================================================
+TestNG --- Test Managment tool --- manage execution of test cases 
+           Testing framework which inspired from JUNIT framework 
+
+   feature 
+   
+   1. annoation : "@" - tag represnt metadata --attached class,method,interface
+                  -- indicate additional information to Java compiler and JVM
+                  
+   2.@Beforesuite ,BeforeTest ,BeforeClass,BeforeMethod ,Test
+     Aftermethod ,@AfterClass ,@AfterTest ,@AfterSuite
+     
+   3.Keyword --->priority 3 ---1   --- Abc ,xyz ,pqr
+                 dependsonmethod  -- A --B 
+                 groups ---10 --- 3 CR ---7 R
+                 invocation count --- multiple time run -- 3
+                 enbaled=false --- execution NO
+                 
+    4.Test Report -- TestNG --emailabletestNG report /index.html
+    5.testng.xml --runner file   --10 TC --100 --     
+    6.parameter --- 
+    7.@dataProvider --- multiple set of test data ---     
+
+
+
+
+
+
+
+
+
 
 
 

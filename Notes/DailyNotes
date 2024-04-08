@@ -351,7 +351,7 @@ driver.switchto().deafultcontent(); //outterframe--mainpage
 ===========================================================
 TestNG --- Test Managment tool --- manage execution of test cases 
            Testing framework which inspired from JUNIT framework 
-
+TestNG -- Test next genration
    feature 
    
    1. annoation : "@" - tag represnt metadata --attached class,method,interface
@@ -365,17 +365,47 @@ TestNG --- Test Managment tool --- manage execution of test cases
                  groups ---10 --- 3 CR ---7 R
                  invocation count --- multiple time run -- 3
                  enbaled=false --- execution NO
+                 timeout
                  
     4.Test Report -- TestNG --emailabletestNG report /index.html
     5.testng.xml --runner file   --10 TC --100 --     
     6.parameter --- 
     7.@dataProvider --- multiple set of test data ---     
 
+=========================================
+
+@Test --- 2 -3 
+
+@BM --------Browser Open
+@Test
+@AM  ---------Browser window close
 
 
+Class BaseClass
+
+@BM --- Browser Open
+@AM --- Browser window close
 
 
+VerifyTest extends BaseClass
 
+@Test
+
+=====================================================
+
+Priority === 
+
+@Test(priority=1)
+public void xyz()
+{
+
+}
+
+@Test(priority=0)
+public void abc()
+{
+
+}
 
 
 

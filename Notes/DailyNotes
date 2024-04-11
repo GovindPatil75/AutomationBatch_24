@@ -407,6 +407,48 @@ public void abc()
 
 }
 
+A - pass   - fail
+B -- execution send -- SKIP
+
+=================================================
+
+feature --TC -10--Review Peer -3-- TC-13 -- Feature Test -Bug -Ready for Demo
+
+-- Test Doc Review - Done 
+
+Functional Testing - Manullay 
+===========================================
+
+13 TC -- PO --3 R -2 CR ---- Regression (650-700)/Critical Regression (130-140)/Sanity
+
+minor release  -- 12.1.1 -- 2 -- 3 -- CR suite
+major release  -- 12.2.0 --- 6 sprint 
+
+==================================================
+100 (R)--46 (CR) ---- 10 (S) == 156 TC
+
+groups --- class  ---CriticalRegression.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

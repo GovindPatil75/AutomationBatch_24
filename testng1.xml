@@ -5,8 +5,7 @@
     <classes>
       <class name="com.Test.Test_includeexclude">
       <methods>
-      <include name="r1"></include>
-      <include name="r2"></include>
+      <exclude name="r1"></exclude>
       </methods>
       </class>
     </classes>

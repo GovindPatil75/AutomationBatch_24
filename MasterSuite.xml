@@ -3,8 +3,19 @@
 <suite name="MasterSuite">
   <test thread-count="5" name="MasterTest">
     <classes>
-      <class name="com.Test.groupsconcepts"/>
-      <class name="com.Test.groupsconcepts_1"/>
+      <class name="com.Test.groupsconcepts">
+      <methods>
+      <exclude name="m1"></exclude>
+      <exclude name="m2"></exclude>
+      </methods>
+      </class>
+      <class name="com.Test.groupsconcepts_1">
+      <methods>
+      <include name="p1"></include>
+      <include name="p2"></include>
+      </methods>
+      </class>
+      <class name="com.Test.Test_includeexclude"/>
     </classes>
   </test> <!-- MasterTest -->
 </suite> <!-- MasterSuite -->

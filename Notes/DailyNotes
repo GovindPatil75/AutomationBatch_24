@@ -431,7 +431,29 @@ groups --- class  ---CriticalRegression.xml
 
 ====================================================
 T1 --C/E
+=====================================================
+Result of an opertaion verify 
 
+-- Assert / hard Assert 
+
+--- Expected Result 
+--- Actual Result
+
+Assert.assertequals(Actual Result,Expected Result );
+
+1
+2
+3
+4
+5
+6
+7
+8-----Assert.assertequals(Actual Result,Expected Result ); // Fail
+9
+10
+
+
+-- Soft Assert /Verify
 
 
 

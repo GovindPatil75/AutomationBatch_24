@@ -454,7 +454,8 @@ Assert.assertequals(Actual Result,Expected Result );
 
 
 -- Soft Assert /Verify
-
+==================================================
+pom (Page Object model) with Pagefactory
 
 
 

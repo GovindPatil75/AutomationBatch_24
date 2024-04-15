@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-13T09:37:26 IST" name="Default suite" finished-at="2024-04-13T09:37:50 IST" duration-ms="24472">
+  <suite started-at="2024-04-15T09:08:32 IST" name="Default suite" finished-at="2024-04-15T09:08:37 IST" duration-ms="5249">
     <groups>
     </groups>
-    <test started-at="2024-04-13T09:37:26 IST" name="Default test" finished-at="2024-04-13T09:37:50 IST" duration-ms="24472">
-      <class name="com.CrossBrowser.VerifyTestT6">
-        <test-method signature="verityTC_007()[pri:0, instance:com.CrossBrowser.VerifyTestT6@49c7b90e]" started-at="2024-04-13T09:37:26 IST" name="verityTC_007" finished-at="2024-04-13T09:37:50 IST" duration-ms="24415" status="PASS">
+    <test started-at="2024-04-15T09:08:32 IST" name="Default test" finished-at="2024-04-15T09:08:37 IST" duration-ms="5249">
+      <class name="com.CrossBrowser.VerifyTest_T7">
+        <test-method signature="verifyFBTC_001()[pri:0, instance:com.CrossBrowser.VerifyTest_T7@49c7b90e]" started-at="2024-04-15T09:08:32 IST" name="verifyFBTC_001" finished-at="2024-04-15T09:08:37 IST" duration-ms="5217" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verityTC_007 -->
-      </class> <!-- com.CrossBrowser.VerifyTestT6 -->
+        </test-method> <!-- verifyFBTC_001 -->
+      </class> <!-- com.CrossBrowser.VerifyTest_T7 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

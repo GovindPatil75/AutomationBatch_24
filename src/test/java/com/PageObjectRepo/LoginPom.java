@@ -6,6 +6,8 @@ import org.openqa.selenium.support.How;
 
 public class LoginPom {
 	
+	// Encapsulation --
+	
 	@FindBy(how=How.XPATH,using="//input[@id='email']") 
 	private WebElement Email;
 	

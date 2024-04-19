@@ -457,10 +457,12 @@ Assert.assertequals(Actual Result,Expected Result );
 ==================================================
 pom (Page Object model) with Pagefactory
 
+10 webpage == 10 pom class
 
 
 
-
+===========================
+driver.findElement(By.xpath("Xpath Expression"));
 
 
 

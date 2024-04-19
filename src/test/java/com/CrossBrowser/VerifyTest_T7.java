@@ -23,6 +23,7 @@ public class VerifyTest_T7 {
 		// WebElement -- 
 		
 		LoginPom login=PageFactory.initElements(driver, LoginPom.class);
+		//HomepagePom home=PageFactory.initElements(driver, HomepagePom.class);
 		
 		login.getEmail().sendKeys("Test");
 		login.getPassword().sendKeys("12345678");

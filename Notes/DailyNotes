@@ -463,6 +463,43 @@ pom (Page Object model) with Pagefactory
 
 ===========================
 driver.findElement(By.xpath("Xpath Expression"));
+====================================================
+
+Team 
+100 -PO -20 CR -30 -R -10 -S --- Automation 
+
+4 QA Automation --- Project - Framework 
+-------------
+Hybrid Framework(Data Driven +Keyword Driven) - TDD Test Driven Devlopment 
+
+Maven Project -- maven build managment tool 
+TestNG -- Test Managment tool / TestNG Framework 
+
+src/main/java
+ com.pageObject -- Element repo
+   LoginPom --- login Webpage ---Identify 
+   HomePagePom -- HomePage --Identify
+ com.Utility
+   BaseClass --- Browser open /Close 
+   ExcelDataProvider ---- Test Data Excel -TC
+   ConfigDataProvider ---- Config.Properties -- key=value
+   Library ---- add reusable methods --
+   ExtentReportGenrator -- 
+   TestListener
+src/main/resources
+src/test/java
+  com.LoginTest
+     VerifyLoginTestTC_001 extends BaseClass
+     VerifyLoginTestTC_002 extends BaseClass
+src/test/resources
+pom.xml  -- required jar/dependancy
+
+TestData -- data.xlsx --excel 
+Config -- Config.Properties -- key=value
+Reports --index.html
+Screenshot --
+
+testng.xml ---runner 
 
 
 

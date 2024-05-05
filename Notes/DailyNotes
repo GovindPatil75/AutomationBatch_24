@@ -501,19 +501,29 @@ Screenshot --
 
 testng.xml ---runner 
 
+===============================================================
+Selenium waits 
+
+Thread.sleep(5000); // 5 sec 
+
+1. implicit wait
+2. explicit wait
+3. fluent wait -- 30 sec -- 5 sec 
+
+ ---Implicit wait  ---
+   - globally applicable to all the element 
+   - driver.manage().timeout().implicitlywait(Duration.ofsecond(10));
+   - max duration execution between two command 
+   - No Such Element Exception 
 
 
+----explicit wait-----
+    -applicable to perticular element 
 
+  WebDriverWait wait=new WebDriverWait(driver,Duration.ofsecond(5));
+  wait.until(ExpectedCondition.Visibilityof(element));
 
-
-
-
-
-
-
-
-
-
+ - Element not visible Exception 
 
 
 
